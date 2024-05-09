@@ -5,11 +5,12 @@ import lombok.Getter;
 
 public enum ErrorEnums {
 
+    LOGIN_ERROR(101001, "登录错误，账号或者密码不正确"),
     /**
      * common
      */
-    UN_KNOW_PARAM_ERROR(171010001, "未知的参数错误"),
-    UN_KNOW_ERROR(171010002, "未知的错误"),
+    UN_KNOW_PARAM_ERROR(102001, "未知的参数错误"),
+    UN_KNOW_ERROR(102002, "未知的错误"),
     ;
 
     private final Integer code;

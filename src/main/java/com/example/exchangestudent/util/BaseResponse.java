@@ -52,7 +52,7 @@ public class BaseResponse<T> {
         return new BaseResponse<>(code, message, data);
     }
 
-    public static <T> BaseResponse<Object> error(ErrorEnums error, T data) {
+    public static <T> BaseResponse<T> error(ErrorEnums error, T data) {
         return error(error.getCode(), error.getMsg(), data);
     }
 
